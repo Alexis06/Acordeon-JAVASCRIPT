@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cadenas</title>
+  </head>
+  <body>
+
+
+    <script>
+      /*Cadenas y formas de imprimir*/
+      var cadena = ("Hola soy ");
+      var cadena2= ("Alexis");
+      //console.log(cadena);//Con console.log se imprime en la coonsola
+
+      //Usar indexOf: devuelve el indice, sirve para encontrar el número de lugares que ocupa nuestra cadena podemos usar palabras o letras.
+      //lastIndexOf: devuele el final de una cadena.
+      var nombre = 'Alexis';
+      //nombre.indexOf('Alexis');//Si el indexOf no encuentra el valor especificado devuelve -1, si lo encuentra devuelve el valor que le corresponde a la casilla que ocupa por letras
+      var ejemplo = 'Hola Juan';
+      console.log(ejemplo.indexOf('Juan'));// Devolvera 5 porque hay 5 letras en total que se necesitan recorrer para llegar a la Palabra Juan
+
+      if (nombre.indexOf('Alexis') != -1){
+        console.log('Eres Alexis');
+      }else{
+        console.log('Tu no eres Alexis, tu eres: ' +nombre);
+      }
+
+      var ejemplo2 = 'Antonio';
+      var ejemplo2_5 = 'Alberto';
+      console.log(ejemplo2.lastIndexOf('Alberto'));
+      //Devuelve -1 porque no encontro el valor.
+
+      console.log(ejemplo2_5.lastIndexOf('Alberto'));
+      //Devuelve 0 porque hay 0 casillas para llegar a la palabra Alberto
+
+      //Los indices
+      //Cada palabra tiene un indice (un espacio enumerado). El primer caracter es igual a 0
+      var indice = 'Hola mundo'
+      console.log(indice[0]);
+      console.log(indice.charAt(1));
+
+      //Remplazar letras o palabras
+      /*Se declara la variable y depues se modifica en su valor y ultimo se imprime*/
+      indice = indice.replace('Hola' , 'Hello');//Primero se indica el valor que deseamos cambiar y luego el valor por el que lo vamos a cambiar
+      console.log(indice);
+
+      //Tomar partes de cadenas
+
+      console.log(indice.slice(0,8));
+      //No toma en cuenta los valores incluyentes (toma el anterior)
+
+      //Convertir todo a mayusculas y a minusculas
+      console.log(indice.toUpperCase());//Mayusculas
+      console.log(indice.toLowerCase());//Minusculas
+
+
+    </script>
+  </body>
+</html>

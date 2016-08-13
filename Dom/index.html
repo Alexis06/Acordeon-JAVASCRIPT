@@ -1,0 +1,64 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Agregando Clases con el DOM</title>
+  <style type="text/css">
+
+    body{
+      background-color: #040909;
+    }
+    .clase{
+      background: #044845;
+
+      padding: 90px 30px;
+
+      margin: auto;
+      margin: 10% 40%;
+
+      display: flex;
+
+      border: none;
+      border-radius: 10px;
+
+      max-width: 25%;
+      max-height: 25%;
+    }
+    .clase2{
+      background: #1C5351;
+
+      padding: 50px 100px;
+
+      display: block;
+
+    }
+
+  </style>
+</head>
+  <body>
+
+  <div id="entrarDiv">
+    <div id="entrarDiv2">
+
+    </div>
+  </div>
+
+    <script type="text/javascript">
+
+      /*
+      Crear una variable que tiene como valor entrar al id, esto con la  seleccion en el DOM
+      */
+      var estiloDiv =  document.getElementById('entrarDiv');
+
+      var estiloDiv2 = document.getElementById('entrarDiv2');
+
+      /*
+      A la variable que tiene seleccionada el id y le agrega una clase
+      */
+      estiloDiv.classList.add('clase');
+
+      estiloDiv2.classList.add('clase2');
+
+    </script>
+
+  </body>
+</html>

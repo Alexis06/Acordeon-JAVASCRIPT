@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Número Mágico</title>
+  </head>
+  <body>
+
+    <p>Encuentra el valor del número mágico:</p>
+    <p>El valor esta entre el 1 y el 100.</p>
+    <p>Escribe 0 si quieres salir del programa.</p>
+
+    <script type="text/javascript">
+
+      //Math.random(): Genera un numero al hazar
+      //parseInt(): convierte los valores float a valores int
+      //prompt(variable,valorPorDefecto): Se usa para solicitar un dato, esta funcion nos crea una casilla input (para que el usuario ingrese el dato solicitado)
+
+      //Denifinimos el valor maximo
+
+      var max = 100;
+
+      //Denifinimos el valor minimo
+
+      var min = 1;
+
+      //Número aleatorio
+
+      var numeroSecreto = Math.random() * (max-min) + min;
+
+      numeroSecreto = parseInt(numeroSecreto);
+
+      console.log(numeroSecreto);
+
+      var mensaje = 'Ingresa tu número mágico';
+
+      while (true) {
+        var numeroUsuario = prompt(mensaje,"0");
+        numeroUsuario = parseInt(numeroUsuario);
+
+        if (numeroUsuario == numeroSecreto){
+          alert('Felicidades Ganaste!');
+          break;
+        } else if (numeroUsuario === 0){
+          break;
+        } else if (numeroUsuario < numeroSecreto) {
+          alert('Tu número es menor al número secreto');
+          break;
+        } else if (numeroUsuario > numeroSecreto) {
+          alert('Tu número es mayor al número secreto');
+        }
+      }
+
+    </script>
+
+  </body>
+</html>
